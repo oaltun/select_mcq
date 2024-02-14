@@ -1,0 +1,98 @@
+{
+    "editor.mouseWheelZoom": true,
+    "cSpell.words": [
+        "Aquestions",
+        "Asolutions",
+        "correctchoice",
+        "CTAN",
+        "donem",
+        "ESAME",
+        "esami",
+        "evenfoot",
+        "evenhead",
+        "fefei",
+        "feifei",
+        "ifpackagewith",
+        "ileri",
+        "INTRUCTIONS",
+        "linewidth",
+        "Messineo",
+        "minipage",
+        "multiparts",
+        "newcommand",
+        "noquizsolutions",
+        "nosolutions",
+        "oddfoot",
+        "oddhead",
+        "odup",
+        "Oğuz",
+        "pdflatex",
+        "pointsonright",
+        "printanswers",
+        "programlama",
+        "prova",
+        "pyperclip",
+        "sistem",
+        "soltest",
+        "TEMA",
+        "twocolumns",
+        "Vassallo",
+        "yxlsx"
+    ],
+    "latex-workshop.latex.tools": [
+        {
+        "name": "lualatex",
+        "command": "lualatex",
+        "args": [
+            "-shell-escape", //I can't remember why I needed this in the past 
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "-pdf",
+            "-output-directory=%OUTDIR%",           
+            "%DOC%"
+        ],
+        "env": {}
+        },
+    
+        {
+        "name": "pdflatex",
+        "command": "pdflatex",
+        "args": [
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "-output-directory=%OUTDIR%",
+            "%DOC%"
+        ],
+        "env": {}
+        },
+    
+        {
+        "name": "biber",
+        "command": "biber",
+        "args": [
+            "%DOCFILE%"
+        ],
+        "env": {}
+        }
+    ],    
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "lualatex",
+            "tools": [
+                "lualatex"
+            ]
+        },
+    
+        {
+            "name": "pdflatex -> biber -> pdflatex TWICE",
+            "tools": [
+                "pdflatex"
+                "biber"
+                "pdflatex"
+                "pdflatex"
+            ]
+        }        
+    ]
+}

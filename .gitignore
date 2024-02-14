@@ -1,0 +1,24 @@
+node_modules/
+node_modules
+secret*
+.condaenv*
+.env*
+.venv*
+venv*
+
+secret/
+rerun_time/
+node_modules/
+venv/
+.venv/
+env/
+.env/
+.condaenv/
+.hatch
+.debug
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
