@@ -20,15 +20,15 @@ You will see how you can use the program.
 
 # Tips
 
-You can edit tex_exam/tpl/main.tex file to your liking. Then re-generate the program.
+You can edit `tex_exam/tpl/main.tex` file to your liking. Then re-generate the program.
 
-There is an example file in tex_exam/tpl/db. You can start building your question db from that file.
+There is an example file in `tex_exam/tpl/db`. You can start building your question db from that file.
 
 # Caveats and todos
 
 Originally the cli was named yxslx. I will at some point change the cli name.
 
-If your options are complex, it does not work. E.g. if you have multiline content, with tikz graphs, etc. there seems to be a bug that prevents it working. If you can find and solve the bug, you are welcome to submit a PR. 
+If your options are complex, it may not work. E.g. if in your options you have multiline content, with tikz graphs, etc. there seems to be a bug that prevents it working. If you can find and solve the bug, you are welcome to submit a PR. The question part can be complex, no problem.
 
 # License
 
